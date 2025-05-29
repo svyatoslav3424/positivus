@@ -1,0 +1,160 @@
+.box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.learn-more-logo {
+  width: 160px;
+}
+
+.card-title {
+  display: inline-flex;
+  color: black;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accent {
+  display: inline-block;
+  background-color: #b9ff66;
+  padding: 0 7px;
+  border-radius: 7px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.accent-white {
+  background-color: #fff;
+  color: black;
+  display: inline-block;
+  padding: 0 7px;
+  border-radius: 7px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.service-card-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.service-card-button-white {
+  color: white;
+}
+
+.servise-card-text {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.service-card-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+  background-color: #000;
+  border: none;
+  border-radius: 50%;
+  transition: transform 200ms linear;
+}
+
+.service-card-icon-wrapper-white {
+  background-color: white;
+}
+
+.service-card-icon-wrapper {
+  .service-card:hover & {
+    transform: scale(1.2) rotate(15deg);
+  }
+}
+
+.service-card-icon {
+  width: 21px;
+  height: 20px;
+  transition: transform 200ms linear;
+  color: #b9ff66;
+}
+
+.service-card-icon-black {
+  color: black;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.learn-more img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.illustration {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 100px;
+}
+
+/* ?hw-03 */
+.box-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.service-card {
+  background: white;
+
+  width: calc(100% / 2 - 20px);
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  box-shadow: 0px 5px 0px 0px #191a23;
+  transition: box-shadow 200ms linear;
+
+  &:hover {
+    box-shadow: 1px 2px 4px 3px #191a23;
+  }
+}
+
+.card-link {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 50px;
+}
+
+.dark {
+  background: #111;
+  color: white;
+}
+
+.green {
+  background: greenyellow;
+  color: black;
+}
+

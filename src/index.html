@@ -10,25 +10,42 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./container.css" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/spin.js/4.1.2/spin.min.css"
+      integrity="sha512-ssYEuK9Epo/48VIlBWTFosf1izrgGZqEMELJP+L7Clh0nvaOSTg87dM+Z8L+KKjrPdMbMvKYOOnzBOkNMhWFsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header container">
-      <svg class="logo-icon">
-        <use href="./images/sprite.svg#logo"></use>
-      </svg>
-      <nav>
+      <a href="./index.html">
+        <svg class="logo-icon">
+          <use href="./images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav
+        class="navigation"
+        style="display: flex; justify-content: space-between"
+      >
         <ul class="nav-list">
           <li><a class="nav-link" href="#">About us</a></li>
           <li><a class="nav-link" href="#">Services</a></li>
           <li><a class="nav-link" href="#">Use Cases</a></li>
           <li><a class="nav-link" href="#">Pricing</a></li>
-          <li><a class="nav-link" href="#">Blog</a></li>
+          <li><a class="nav-link" href="./blog.html">Blog</a></li>
         </ul>
+        <a href="#form" class="quote-btn">Request a quote</a>
       </nav>
-      <button class="quote-btn">Request a quote</button>
+      <!-- <svg class="header-menu">
+        <use href="./images/sprite.svg#menu"></use>
+      </svg> -->
     </header>
 
     <section class="hero">
@@ -43,32 +60,52 @@
               online through a range of services including SEO, PPC, social
               media marketing, and content creation.
             </p>
-            <button class="hero-btn">Book a consultation</button>
+            <a href="#form" class="hero-btn">Book a consultation</a>
           </div>
           <div class="hero-image">
             <img src="./images/Illustration.png" alt="Marketing illustration" />
           </div>
         </div>
-        <ul class="brand-list">
-          <li>
-            <img src="./images/brand-1.webp" alt="amazon logo" />
-          </li>
-          <li>
-            <img src="./images/brand-2.webp" alt="dribble logo" />
-          </li>
-          <li>
-            <img src="./images/brand-3.webp" alt="hubspot logo" />
-          </li>
-          <li>
-            <img src="./images/brand-4.webp" alt="notion logo" />
-          </li>
-          <li>
-            <img src="./images/brand-5.webp" alt="netflix logo" />
-          </li>
-          <li>
-            <img src="./images/brand-6.webp" alt="zoom logo" />
-          </li>
-        </ul>
+        <div class="swiper-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/brand-1.webp" alt="amazon logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-2.webp" alt="dribble logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-3.webp" alt="hubspot logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-4.webp" alt="notion logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-5.webp" alt="netflix logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-6.webp" alt="zoom logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-1.webp" alt="amazon logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-2.webp" alt="dribble logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-3.webp" alt="hubspot logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-4.webp" alt="notion logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-5.webp" alt="netflix logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-6.webp" alt="zoom logo" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -83,7 +120,7 @@
         </div>
 
         <ul class="box-list">
-          <li class="card">
+          <li class="service-card">
             <a class="card-link" href="">
               <div class="card-left">
                 <h3 class="card-title">
@@ -105,7 +142,7 @@
             </a>
           </li>
 
-          <li class="card green">
+          <li class="service-card green">
             <a class="card-link" href="">
               <div class="card-left">
                 <h3 class="card-title">
@@ -127,7 +164,7 @@
             </a>
           </li>
 
-          <li class="card dark">
+          <li class="service-card dark">
             <a class="card-link" href="">
               <div class="card-left">
                 <h3 class="card-title">
@@ -154,7 +191,7 @@
             </a>
           </li>
 
-          <li class="card">
+          <li class="service-card">
             <a class="card-link" href="">
               <div class="card-left">
                 <h3 class="card-title">
@@ -176,7 +213,7 @@
             </a>
           </li>
 
-          <li class="card green">
+          <li class="service-card green">
             <a class="card-link" href="">
               <div class="card-left">
                 <h3 class="card-title">
@@ -198,7 +235,7 @@
             </a>
           </li>
 
-          <li class="card dark">
+          <li class="service-card dark">
             <a class="card-link" href="">
               <div class="card-left">
                 <h3 class="card-title">
@@ -237,7 +274,7 @@
               Contact us today to learn more about how our digital marketing
               services can help your business grow and succeed online.
             </p>
-            <a href="" class="cta-button">Get your free proposal</a>
+            <a href="#form" class="cta-button">Get your free proposal</a>
           </div>
           <img class="cta-logo" src="./images/stars-and-romb.svg" alt="stars" />
         </div>
@@ -307,7 +344,7 @@
             >Step-by-Step Guide to Achieving Your Business Goals</span
           >
         </div>
-        <ul>
+        <ul class="accordion-list">
           <li class="accordion-item">
             <div class="accordion-header">
               <h3 class="accordion-title">
@@ -317,11 +354,14 @@
                 <use href="./images/sprite.svg#icon-plus"></use>
               </svg>
             </div>
-            <p class="accordion-content">
-              During the initial consultation, we will discuss your business
-              goals and objectives, target audience, and current marketing
-              efforts...
-            </p>
+            <div class="accordion-footer">
+              <hr size="2" color="#000" class="accordion-hr" />
+              <p class="accordion-content">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts...
+              </p>
+            </div>
           </li>
           <li class="accordion-item">
             <div class="accordion-header">
@@ -333,9 +373,14 @@
                 <use href="./images/sprite.svg#icon-plus"></use>
               </svg>
             </div>
-            <p class="accordion-content">
-              Details about research and strategy development...
-            </p>
+            <div class="accordion-footer">
+              <hr size="2" color="#000" class="accordion-hr" />
+              <p class="accordion-content">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts...
+              </p>
+            </div>
           </li>
           <li class="accordion-item">
             <div class="accordion-header">
@@ -346,7 +391,14 @@
                 <use href="./images/sprite.svg#icon-plus"></use>
               </svg>
             </div>
-            <p class="accordion-content">Details about implementation...</p>
+            <div class="accordion-footer">
+              <hr size="2" color="#000" class="accordion-hr" />
+              <p class="accordion-content">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts...
+              </p>
+            </div>
           </li>
           <li class="accordion-item">
             <div class="accordion-header">
@@ -358,9 +410,14 @@
                 <use href="./images/sprite.svg#icon-plus"></use>
               </svg>
             </div>
-            <p class="accordion-content">
-              Details about monitoring and optimization...
-            </p>
+            <div class="accordion-footer">
+              <hr size="2" color="#000" class="accordion-hr" />
+              <p class="accordion-content">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts...
+              </p>
+            </div>
           </li>
           <li class="accordion-item">
             <div class="accordion-header">
@@ -372,9 +429,14 @@
                 <use href="./images/sprite.svg#icon-plus"></use>
               </svg>
             </div>
-            <p class="accordion-content">
-              Details about reporting and communication...
-            </p>
+            <div class="accordion-footer">
+              <hr size="2" color="#000" class="accordion-hr" />
+              <p class="accordion-content">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts...
+              </p>
+            </div>
           </li>
           <li class="accordion-item">
             <div class="accordion-header">
@@ -385,9 +447,14 @@
                 <use href="./images/sprite.svg#icon-plus"></use>
               </svg>
             </div>
-            <p class="accordion-content">
-              Details about continual improvement...
-            </p>
+            <div class="accordion-footer">
+              <hr size="2" color="#000" class="accordion-hr" />
+              <p class="accordion-content">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts...
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -555,9 +622,11 @@
             </p>
           </li>
         </ul>
+
+        <button class="profile-btn">See all team</button>
       </div>
     </section>
-    <!-- <section class="testimonials">
+    <section class="testimonials">
       <div class="container">
         <div class="box">
           <h2 class="badge">Testimonials</h2>
@@ -566,38 +635,97 @@
             about Our Digital Marketing Services
           </p>
         </div>
-        <div class="testimonial-slider">
-          <div class="testimonial">
-            <p>
-              "We have been working with Positivus for the past year and have
-              seen a significant increase in website traffic and leads as a
-              result of their efforts..."
-            </p>
-            <h4>John Smith</h4>
-            <span>Marketing Director at XYZ Corp</span>
-          </div>
-          <div class="testimonial">
-            <p>
-              "The team is professional, responsive, and truly cares about the
-              success of our business..."
-            </p>
-            <h4>John Smith</h4>
-            <span>Marketing Director at XYZ Corp</span>
-          </div>
-        </div>
-        <div class="testimonial-logo">
-          <img
-            src="./images/Navigation stars.png"
-            alt=""
-            class="testimonial-logo"
-          />
+        <div class="swiper-2">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide swiper-slide-1">
+              <div class="testimonial-border">
+                <p class="testimonial-text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
 
-          <svg class="service-card-icon">
+              <div class="testimonial-bottom">
+                <h4 class="testimonial-title">John Smith</h4>
+                <span class="testimonial-wrapper"
+                  >Marketing Director at XYZ Corp</span
+                >
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="testimonial-border">
+                <p class="testimonial-text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+
+              <div class="testimonial-bottom">
+                <h4 class="testimonial-title">John Smith</h4>
+                <span class="testimonial-wrapper"
+                  >Marketing Director at XYZ Corp</span
+                >
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="testimonial-border">
+                <p class="testimonial-text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+
+              <div class="testimonial-bottom">
+                <h4 class="testimonial-title">John Smith</h4>
+                <span class="testimonial-wrapper"
+                  >Marketing Director at XYZ Corp</span
+                >
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="testimonial-border">
+                <p class="testimonial-text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+
+              <div class="testimonial-bottom">
+                <h4 class="testimonial-title">John Smith</h4>
+                <span class="testimonial-wrapper"
+                  >Marketing Director at XYZ Corp</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="testimonial-logo">
+          <!-- <svg class="service-card-icon">
             <use href="./images/sprite.svg#learn-more-icon"></use>
-          </svg>
+          </svg> -->
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Contact Section -->
     <section class="contact">
@@ -609,7 +737,7 @@
           </span>
         </div>
 
-        <div class="form-wrapper">
+        <div class="form-wrapper" id="form">
           <form class="form">
             <div class="radio-group">
               <div class="radio-item">
@@ -617,7 +745,7 @@
                   <input
                     type="radio"
                     id="sayHi"
-                    name="contactType"
+                    name="quote"
                     checked
                     class="radio-btn"
                   />
@@ -631,6 +759,7 @@
                 <div class="custom-radio-btn">
                   <input
                     type="radio"
+                    name="quote"
                     id="quote"
                     name="contactType"
                     class="radio-btn"
@@ -645,23 +774,40 @@
             <div class="group">
               <div class="input-group">
                 <label for="name" class="input-group-label">Name</label>
-                <input type="text" id="name" placeholder="Name" class="input-item"/>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  class="input-item"
+                />
               </div>
               <div class="input-group">
                 <label for="email" class="input-group-label">Email*</label>
-                <input type="email" id="email" placeholder="Email" class="input-item"/>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  class="input-item"
+                />
               </div>
               <div class="input-group">
                 <label for="message" class="input-group-label">Message*</label>
                 <textarea
                   class="message"
                   rows="4"
+                  name="message"
+                  id="message"
                   placeholder="Message"
                   class="input-item"
                 ></textarea>
               </div>
             </div>
-            <button class="btn">Send Message</button>
+            <div class="spinner">
+              <div id="foo"></div>
+            </div>
+            <button name="btn" class="btn">Send Message</button>
           </form>
           <img
             src="./images/contact-picture.png"
@@ -743,6 +889,7 @@
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Email"
               class="input-wrapper"
             />
@@ -758,6 +905,8 @@
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
+    <script src="./swiper.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

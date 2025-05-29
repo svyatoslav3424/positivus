@@ -1,0 +1,83 @@
+.profile-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.profile-btn {
+  border-radius: 14px;
+  background: #191a23;
+  color: #fff;
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  line-height: 1.4;
+  padding: 20px 35px;
+  display: flex;
+  cursor: pointer;
+  border: 1px black solid;
+  transition: background-color 200ms linear, color 200ms linear;
+}
+
+.profile-btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.profile-card {
+  background: white;
+  width: calc((100% - 60px) / 3);
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  min-width: 352px;
+  padding: 40px 35px;
+  box-shadow: 0px 5px 0px 0px #191a23;
+}
+
+@media screen and (min-width: 1280px) {
+  .profile-card {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hr {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.profile-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  align-self: self-start;
+  text-align: start;
+}
+
+.profile-card h3 {
+  font-size: 18px;
+}
+.profile-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.linkedin-icon {
+  align-self: flex-end;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 20px;
+}

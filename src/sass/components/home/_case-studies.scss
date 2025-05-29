@@ -1,0 +1,51 @@
+.case-studies {
+  color: white;
+  margin-bottom: 70px;
+}
+
+.case-group {
+  display: flex;
+  padding: 70px 60px;
+  border-radius: 45px;
+  width: 100%;
+  background: #111;
+
+  gap: 30px;
+}
+
+.case-study {
+  padding: 20px;
+}
+
+.case-text {
+  font-size: 18px;
+}
+
+.divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  height: 186px;
+}
+
+.learn-more {
+  background-color: transparent;
+  border: none;
+  color: #b9ff66;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 15px;
+}
+
+.learn-more-icon {
+  width: 21px;
+  height: 20px;
+}
+
+.learn-more span {
+  font-size: 16px;
+}

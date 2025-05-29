@@ -1,0 +1,18 @@
+@import "../components/header.scss";
+@import "../components/home/hero";
+@import "../components/home/services";
+@import "../components/home/cta";
+@import "../components/home/case-studies";
+@import "../components/home/working-process";
+@import "../components/home/team";
+@import "../components/home/testimonials";
+@import "../components/home/contact";
+@import "../components/home/swiper";
+@import "../components/footer";
+
+body {
+  padding-top: 40px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}
