@@ -1,7 +1,11 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 15px;
   width: 100%;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

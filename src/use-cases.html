@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <header class="header container">
+      <a href="./index.html">
+        <svg class="logo-icon">
+          <use href="./images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="./about.html">About us</a></li>
+          <li><a class="nav-link" href="./services.htnl">Services</a></li>
+          <li><a class="nav-link" href="./use-cases.html">Use Cases</a></li>
+          <li><a class="nav-link" href="./pricing.html">Pricing</a></li>
+          <li><a class="nav-link" href="./blog.html">Blog</a></li>
+        </ul>
+        <a href="#form" class="quote-btn">Request a quote</a>
+      </nav>
+      <svg class="header-menu">
+        <use href="./images/sprite.svg#menu"></use>
+      </svg>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="marketing-card">
+          <div class="hero-image">
+            <img
+              class="hero-image-illustration"
+              src="./images/stories.png"
+              alt="Marketing illustration"
+              class="illustration-img"
+            />
+          </div>
+          <div class="hero-content">
+            <h1 class="hero-title">Proven Success Stories</h1>
+            <p class="hero-text">
+              See how our innovative digital marketing strategies have
+              transformed businesses. Whether through SEO, PPC, social media, or
+              web design, these use cases highlight the tangible impact of our
+              work. Explore the successes and envision what we can achieve
+              together.
+            </p>
+            <a href="#form" class="hero-btn">Book a consultation</a>
+          </div>
+        </div>
+        <!-- <div class="swiper-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/brand-1.webp" alt="amazon logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-2.webp" alt="dribble logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-3.webp" alt="hubspot logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-4.webp" alt="notion logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-5.webp" alt="netflix logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-6.webp" alt="zoom logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-1.webp" alt="amazon logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-2.webp" alt="dribble logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-3.webp" alt="hubspot logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-4.webp" alt="notion logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-5.webp" alt="netflix logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/brand-6.webp" alt="zoom logo" />
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <div class="story-card">
+      <div class="story-card-left">
+        <h4 class="badge">Featured Success Story</h4>
+        <h2 class="story-card-title">
+          Scaling Success for a <br />Leading E-Commerce Brand
+        </h2>
+        <p class="story-card-description">
+          Through a comprehensive SEO and PPC strategy, we helped <br />this
+          e-commerce brand increase visibility, drive traffic, and <br />boost
+          sales.
+        </p>
+        <div class="story-card-link-wrapper">
+          <a href="" class="story-card-link">
+            <svg class="story-card-img">
+              <use
+                x="10"
+                y="10"
+                href="./images/sprite.svg#learn-more-icon"
+              ></use>
+            </svg>
+            <span class="story-card-link-label">Read</span></a
+          >
+        </div>
+      </div>
+      <ul class="card-right">
+        <li class="stat">
+          <h3>200%</h3>
+          <span class="stat-description"
+            >increase in <br />organic traffic</span
+          >
+        </li>
+        <li class="stat">
+          <h3>150%</h3>
+          <span class="stat-description">rise in online <br />sales</span>
+        </li>
+        <li class="stat">
+          <h3>75%</h3>
+          <span class="stat-description"
+            >reduction in <br />cost-per-click (CPC)</span
+          >
+        </li>
+        <li class="stat">
+          <h3>300%</h3>
+          <span class="stat-description"
+            >improvement in <br />conversion rate</span
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2 class="badge">All Success Stories</h2>
+      <p class="badge-label">
+        Explore Real-Life Examples of Our Proven Digital Marketing Success
+        through Our Case Studies
+      </p>
+    </div>
+
+    <div class="grid-container">
+      <div class="card">
+        <h3 class="insight-card-title">
+          10 SEO Myths You <br />Need to Stop <br />Believing
+        </h3>
+        <p>
+          Think keyword stuffing and meta tags are the secret to ranking?
+          Discover the truth behind common SEO misconceptions and learn what
+          really drives results.
+        </p>
+        <a href="#" class="read-more">
+          <img src="./images/Icon.svg" alt="arrow" />
+          Read article
+        </a>
+      </div>
+      <div class="card">
+        <h3 class="insight-card-title">
+          Maximizing ROI with Social Media Advertising
+        </h3>
+        <p>
+          Social media ads are more than just boosted posts. Explore proven
+          strategies for crafting campaigns that engage audiences and deliver
+          measurable returns.
+        </p>
+        <a href="#" class="read-more">
+          <img src="./images/Icon.svg" alt="arrow" />
+          Read article
+        </a>
+      </div>
+      <div class="card">
+        <h3 class="insight-card-title">
+          How Content Marketing Fuels Long-Term Growth
+        </h3>
+        <p>
+          Content isn’t just king—it’s the foundation of sustainable business
+          growth. Find out how blogs, videos, and more can build trust and drive
+          conversions.
+        </p>
+        <a href="#" class="read-more">
+          <img src="./images/Icon.svg" alt="arrow" />
+          Read article
+        </a>
+      </div>
+      <div class="card">
+        <h3 class="insight-card-title">
+          The Art of A/B Testing: Perfecting Your Campaigns
+        </h3>
+        <p>
+          From headlines to call-to-actions, small tweaks can make a big
+          difference. Learn how to use A/B testing to refine your marketing
+          strategies.
+        </p>
+        <a href="#" class="read-more">
+          <img src="./images/Icon.svg" alt="arrow" />
+          Read article
+        </a>
+      </div>
+      <div class="card">
+        <h3 class="insight-card-title">
+          Understanding Google’s Latest Algorithm Update
+        </h3>
+        <p>
+          Search rankings change constantly—stay ahead by learning about the
+          latest Google update and its impact on your SEO strategy.
+        </p>
+        <a href="#" class="read-more">
+          <img src="./images/Icon.svg" alt="arrow" />
+          Read article
+        </a>
+      </div>
+      <div class="card">
+        <h3 class="insight-card-title">
+          5 Ways AI is Changing Digital Marketing
+        </h3>
+        <p>
+          Artificial intelligence is transforming the way we target, analyze,
+          and engage audiences. Discover how to leverage AI to stay competitive.
+        </p>
+        <a href="#" class="read-more">
+          <img src="./images/Icon.svg" alt="arrow" />
+          Read article
+        </a>
+      </div>
+    </div>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="box">
+          <h2 class="badge">Testimonials</h2>
+          <p class="badge-label">
+            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+            about Our Digital Marketing Services
+          </p>
+        </div>
+        <div class="swiper-2">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide swiper-slide-1">
+              <div class="testimonial-border">
+                <p class="testimonial-text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+
+              <div class="testimonial-bottom">
+                <h4 class="testimonial-title">John Smith</h4>
+                <span class="testimonial-wrapper"
+                  >Marketing Director at XYZ Corp</span
+                >
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="testimonial-border">
+                <p class="testimonial-text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+
+              <div class="testimonial-bottom">
+                <h4 class="testimonial-title">John Smith</h4>
+                <span class="testimonial-wrapper"
+                  >Marketing Director at XYZ Corp</span
+                >
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="testimonial-border">
+                <p class="testimonial-text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+
+              <div class="testimonial-bottom">
+                <h4 class="testimonial-title">John Smith</h4>
+                <span class="testimonial-wrapper"
+                  >Marketing Director at XYZ Corp</span
+                >
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="testimonial-border">
+                <p class="testimonial-text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+
+              <div class="testimonial-bottom">
+                <h4 class="testimonial-title">John Smith</h4>
+                <span class="testimonial-wrapper"
+                  >Marketing Director at XYZ Corp</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="cta-text">
+      <div class="container">
+        <div class="cta-content-2">
+          <div class="cta-title">
+            <h2 class="cta-item">Let’s make things happen</h2>
+            <p>
+              Contact us today to learn more about how our digital marketing
+              services can help your business grow and succeed online.
+            </p>
+            <a href="#form" class="cta-button">Get your free proposal</a>
+          </div>
+          <img class="cta-logo" src="./images/stars-and-romb.svg" alt="stars" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div class="footer-wrapper">
+        <div class="footer-item">
+          <svg class="logo-icon footer-logo-icon">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#">About us</a></li>
+            <li><a class="nav-link" href="#">Services</a></li>
+            <li><a class="nav-link" href="#">Use Cases</a></li>
+            <li><a class="nav-link" href="#">Pricing</a></li>
+            <li><a class="nav-link" href="#">Blog</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <img
+                src="./images/linkedin.svg"
+                alt="icon"
+                style="cursor: pointer"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/facebook.svg"
+                alt="icon"
+                style="cursor: pointer"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/twiter.svg"
+                alt="icon"
+                style="cursor: pointer"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <div class="footer-info">
+            <button class="contacts">Contact us:</button>
+            <div class="contacts-info">
+              <p>
+                Email:
+                <a class="footer-contact-link" href="mailto:info@positivus.com"
+                  >info@positivus.com</a
+                >
+              </p>
+              <p>
+                Phone:
+                <a class="footer-contact-link" href="tel:5555678901"
+                  >555-567-8901</a
+                >
+              </p>
+              <p>
+                Address:
+                <a
+                  class="footer-contact-link"
+                  href="https://www.google.com.ua/maps/place/%D0%9C%D1%83%D0%BD%D1%81%D1%82%D0%BE%D0%BD,+%D0%9E%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%BE+L0K+1N0,+%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0/@44.6553031,-79.6832408,15z/data=!3m1!4b1!4m6!3m5!1s0x4d2ab66a813a9703:0x980f51ff49deabbd!8m2!3d44.65529!4d-79.663757!16s%2Fg%2F11cm3s9j70?hl=ru&entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  >1234 Main St, Moonstone City, Stardust State 12345</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="email-wrapper">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              class="input-wrapper"
+            />
+            <button class="subscribe-btn">Subscribe to news</button>
+          </div>
+        </div>
+
+        <hr class="line-footer" />
+
+        <div class="footer-copyright">
+          <p class="footer-right">© 2023 Positivus. All Rights Reserved.</p>
+          <a href="" class="footer-privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

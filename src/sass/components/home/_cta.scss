@@ -12,23 +12,31 @@
   align-items: center;
   padding: 5px 10px;
   border-radius: 5px;
-  font-weight: bold;
   margin-bottom: 70px;
 }
 
 .cta-text {
-  margin-bottom: 140px;
+  margin-bottom: 60px;
+
+  @media (min-width:1024px) {
+    margin-bottom: 140px;
+  }
 }
 
 .cta-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #f3f3f3;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 45px;
-  gap: 160px;
+  padding: 50px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+  }
 }
 
 .cta-text h2 {
@@ -41,6 +49,7 @@
   margin-bottom: 25px;
 }
 .cta-button {
+  text-align: center;
   background: #191a23;
   color: white;
   padding: 20px 35px;
@@ -60,4 +69,8 @@
 
 .cta-logo {
   transform: scale(1.15);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }

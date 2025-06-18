@@ -1,0 +1,182 @@
+.author-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  gap: 100px;
+  border-bottom: 2px #000000 solid;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-name {
+  color: #000;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.author-details .role {
+  color: #000;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+}
+
+.font-size-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.font-size-toggle .size {
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.font-size-toggle .active {
+  color: #000;
+  font-weight: bold;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.section-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 870px;
+}
+
+.text-item {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: "Space Grotesk";
+  font-size: 29px;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  line-height: 1.6;
+}
+
+.title {
+  display: flex;
+  margin-left: 65px;
+}
+
+.text-title {
+  color: #000;
+  font-size: 40px;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.center-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.comparing-title {
+  color: #000;
+  font-family: "Space Grotesk";
+  font-size: 40px;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.text-wrapper {
+  color: #000;
+  text-align: justify;
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 40px;
+  line-height: normal;
+}
+
+.Striking-title {
+  color: #000;
+  font-size: 40px;
+  line-height: normal;
+  display: flex;
+}
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-romb {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 140px;
+}
+
+.quote-title {
+  color: #000;
+  font-size: 40px;
+  line-height: normal;
+  text-align: start;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+blockquote {
+  border-left: 4px solid #b4ff7f;
+  padding-left: 16px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.quote-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 50px;
+  line-height: normal;
+  gap: 15px;
+}
+
+.fact-title {
+  text-align: left;
+  align-self: start;
+  line-height: normal;
+  margin-bottom: 30px;
+  font-size: 40px;
+
+  font-weight: 500;
+  line-height: normal;
+}
+
+.facts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: start;
+  margin-bottom: 40px;
+  list-style: disc;
+  padding-left: 18px;
+}
+
+.fact-title-margin {
+  margin-bottom: 50px;
+}

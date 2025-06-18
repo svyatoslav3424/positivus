@@ -7,12 +7,27 @@
 .header-menu {
   width: 26px;
   height: 19px;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+
+  @media (min-width: 1024px) {
+    gap: 25px;
+  }
+
+  @media (min-width: 1280px) {
+    gap: 70px;
+  }
+
+  @media (min-width: 1536px) {
+    gap: 100px;
+  }
 }
 
 .logo-icon {
@@ -26,8 +41,16 @@
 .nav-list {
   list-style: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 15px;
+  margin-top: 37px;
+  margin-bottom: 37px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 .nav-link {
@@ -56,6 +79,7 @@
   cursor: pointer;
   border-radius: 14px;
   width: 236px;
+  height: 89px;
   color: #000;
   text-align: center;
   font-family: "Space Grotesk";
@@ -69,4 +93,13 @@
 .quote-btn:hover {
   background: black;
   color: white;
+}
+
+.navigation {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

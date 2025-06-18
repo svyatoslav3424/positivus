@@ -1,0 +1,46 @@
+.read-more {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.read-more img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.card {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.card:nth-child(3),
+.card:nth-child(6) {
+  border-right: none;
+}
+
+.card:nth-child(4),
+.card:nth-child(5),
+.card:nth-child(6) {
+  border-bottom: none;
+}
+
+.insight-card-description {
+  color: #000;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: start;
+}

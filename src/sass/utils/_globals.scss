@@ -4,161 +4,19 @@
   box-sizing: border-box;
 }
 
-/* !Footer */
-
-.footer-list {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-wrapper {
-  color: #fff;
-  background-color: #000;
-  border-radius: 45px 45px 0px 0px;
-  padding: 55px 60px 50px 60px;
-}
-
-.footer-item {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  margin-bottom: 56px;
-}
-
-.footer .nav-link {
-  color: #fff;
-}
-
-.footer .nav-link:hover {
-  color: #000;
-}
-
-.footer-contact {
-  display: flex;
-  gap: 154px;
-}
-
-.contacts {
-  width: 126px;
-  height: 26px;
-  background-color: #b9ff66;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  margin-bottom: 27px;
-  font-family: "Space Grotesk";
-  font-weight: 500;
+body {
+  padding-top: 40px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
   line-height: normal;
-}
-
-.subscribe-btn {
-  background: #b9ff66;
-  border-radius: 14px;
-  border: none;
-  font-family: "Space Grotesk";
-  font-size: 20px;
-  line-height: 1.4;
-  cursor: pointer;
-  padding: 20px 35px;
-  flex-grow: 1;
-  transition: background-color 150ms linear;
-}
-
-.subscribe-btn:hover {
-  background-color: #98e737;
-}
-
-.subscribe {
-  background-color: #b4ff67;
-  border: none;
-  padding: 8px 12px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.footer-copyright {
-  display: flex;
-  gap: 40px;
-}
-
-.input-group {
-  display: grid;
-}
-
-.input-item,
-.message {
-  border-radius: 14px;
-  border: 1px solid #000;
-  font-family: "Space Grotesk";
-  font-size: 18px;
-  padding: 18px 30px;
-}
-
-.input-wrapper {
-  border-color: white;
-  background-color: #292a32;
-  color: white;
-  border-radius: 14px;
-  padding: 22px 35px;
-  flex-grow: 1;
-  font-family: "Space Grotesk";
-  font-size: 18px;
-  line-height: normal;
-}
-
-.input-wrapper::placeholder {
-  color: white;
-}
-
-.email-wrapper {
-  display: flex;
-  gap: 20px;
-  border-radius: 14px;
-  background: #292a32;
-  padding: 58px 40px;
-  flex-grow: 1;
-}
-
-.footer-privacy,
-.footer-right {
-  color: #fff;
-  font-family: "Space Grotesk";
-  font-size: 18px;
-  line-height: 1.55;
-}
-
-.footer-logo-icon {
-  color: #fff;
-}
-
-.line-footer {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.contacts-info {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  font-family: "Space Grotesk";
-  font-size: 18px;
-}
-
-.footer-contact-link {
-  color: white;
-  letter-spacing: 0.03em;
-  transition: color 200ms linear;
-}
-
-.footer-contact-link:hover {
-  color: #dfdddd;
+  margin: 0;
 }
 
 .badge {
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   background-color: #b9ff66;
   color: #000;
   font-weight: 500;
@@ -166,6 +24,16 @@
   border-radius: 5px;
   font-size: 40px;
   line-height: normal;
+  text-align: center;
+}
+
+.badge-label {
+  text-align: center;
+  color: black;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .text {
@@ -173,4 +41,15 @@
   font-size: 18px;
   line-height: normal;
   width: 580px;
+  text-align: justify;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #000000;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 45px;
+  border-bottom: 6px solid black;
 }
