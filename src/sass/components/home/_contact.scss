@@ -44,38 +44,6 @@
   resize: none;
 }
 
-.input-wrapper {
-  border-color: white;
-  background-color: #292a32;
-  color: white;
-  border-radius: 14px;
-  padding: 22px 35px;
-  flex-grow: 1;
-  font-family: "Space Grotesk";
-  font-size: 18px;
-  line-height: normal;
-}
-
-.input-wrapper::placeholder {
-  color: white;
-}
-
-.email-wrapper {
-  display: flex;
-  flex-direction: column;
-  border-radius: 14px;
-  background: #292a32;
-  padding: 30px;
-  flex-grow: 1;
-  gap: 20px;
-  
-  @media (min-width: 768px) {
-    padding: 58px 40px;
-    gap: 20px;
-    display: flex;
-  }
-}
-
 .btn {
   display: flex;
   padding: 20px 35px;

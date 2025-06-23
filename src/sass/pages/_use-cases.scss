@@ -1,6 +1,4 @@
 .story-card {
-  display: flex;
-  justify-content: space-around;
   padding: 60px;
   background-color: #191a23;
   border-radius: 45px;
@@ -9,6 +7,12 @@
   border-bottom: 5px solid #191a23;
   border-left: 1px solid #191a23;
   margin-bottom: 140px;
+  
+  @media (min-width:768px) {
+    display: flex;
+    justify-content: space-around;
+    
+  }
 }
 
 .story-card-left {

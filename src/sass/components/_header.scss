@@ -44,12 +44,14 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  margin-top: 37px;
-  margin-bottom: 37px;
 
   @media (min-width: 768px) {
     flex-direction: row;
-    gap: 40px;
+    gap: 15px;
+  }
+
+  @media (min-width:1280px) {
+    gap: 30px;
   }
 }
 
@@ -73,21 +75,33 @@
 }
 
 .quote-btn {
-  padding: 20px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
   border: 1px solid black;
   background: white;
   cursor: pointer;
   border-radius: 14px;
-  width: 236px;
-  height: 89px;
+
   color: #000;
   text-align: center;
   font-family: "Space Grotesk";
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4;
   text-decoration: none;
 
   transition: background-color 150ms linear, color 150ms linear;
+
+  @media (min-width: 1024px) {
+    width: 200px;
+    height: 55px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 210px;
+    height: 65px;
+  }
 }
 
 .quote-btn:hover {

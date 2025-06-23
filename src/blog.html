@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" href="./sass/blog.scss" />
   </head>
   <body>
     <header class="header container">
@@ -19,7 +19,7 @@
           <use href="./images/sprite.svg#logo"></use>
         </svg>
       </a>
-      <nav>
+      <nav class="navigation">
         <ul class="nav-list">
           <li><a class="nav-link" href="./about.html">About us</a></li>
           <li><a class="nav-link" href="./services.htnl">Services</a></li>
@@ -27,41 +27,47 @@
           <li><a class="nav-link" href="./pricing.html">Pricing</a></li>
           <li><a class="nav-link" href="./blog.html">Blog</a></li>
         </ul>
+        <a href="#form" class="quote-btn">Request a quote</a>
       </nav>
-      <button class="quote-btn">Request a quote</button>
+      <svg class="header-menu">
+        <use href="./images/sprite.svg#menu"></use>
+      </svg>
     </header>
-
-    <div class="marketing-card">
-      <div class="image-section">
-        <img src="./images/Illustration.png" alt="Marketing Megaphone" />
-      </div>
-      <div class="content-section">
-        <span class="tag">Marketing Strategies</span>
-        <h2>
-          PPC vs. Organic Marketing: Which One Is Right for Your Business?
-        </h2>
-        <p>
-          PPC and organic marketing each offer unique benefits for driving
-          traffic and growing your business. Discover which strategy aligns best
-          with your goals and how to strike the perfect balance.
-        </p>
-      </div>
-    </div>
-
-    <div class="author-section">
-      <div class="author-info">
-        <img src="./images/sarah-avatar.png" alt="sarah" />
-        <div class="author-details">
-          <strong class="author-name">Sarah Kim</strong>
-          <div class="role">Content Creator</div>
+    <div class="container">
+      <div class="marketing-card">
+        <div class="image-section">
+          <img src="./images/Illustration.png" alt="Marketing Megaphone" />
+        </div>
+        <div class="content-section">
+          <span class="tag">Marketing Strategies</span>
+          <h2>
+            PPC vs. Organic Marketing: Which One Is Right for Your Business?
+          </h2>
+          <p>
+            PPC and organic marketing each offer unique benefits for driving
+            traffic and growing your business. Discover which strategy aligns
+            best with your goals and how to strike the perfect balance.
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="font-size-toggle">
-        <img src="./images/font-size.png" alt="font size" />
+    <div class="container">
+      <div class="author-section">
+        <div class="author-info">
+          <img src="./images/sarah-avatar.png" alt="sarah" />
+          <div class="author-details">
+            <strong class="author-name">Sarah Kim</strong>
+            <div class="role">Content Creator</div>
+          </div>
+        </div>
+
+        <div class="font-size-toggle">
+          <img src="./images/font-size.png" alt="font size" />
+        </div>
       </div>
     </div>
-    <section class="section-text">
+    <section class="section-text container">
       <div class="section-item">
         <div class="section-wrapper">
           <p class="text-item">
@@ -139,14 +145,13 @@
                   game with organic strategies or opt for quick wins with PPC?
                 </p>
               </div>
-              <h2 class="fact-title fact-title-margin">
+              <h2 class="fact-title" style="margin-bottom: 0">
                 By the Numbers: Facts About PPC and Organic Marketing
               </h2>
             </div>
           </div>
         </div>
       </div>
-
       <div class="stat-grid">
         <div class="stat-row">
           <div class="card white restricted-rectangle">
@@ -188,7 +193,6 @@
           </div>
         </div>
       </div>
-
       <div class="quote">
         <h2 class="fact-title">Real-World Examples</h2>
 
@@ -243,118 +247,121 @@
           strategy that drives results today.
         </p>
       </div>
-
       <svg class="quote-romb">
-        <use href="./images/sprite.svg#vector"></use>
+        <use href="./images/sprite.svg#romb"></use>
       </svg>
-
       <div class="box">
-        <h2 class="badge">Explore More Insights</h2>
+        <h2 class="badge badge-no-bg">
+          <span class="badge-part">Explore More</span>
+          <span class="badge-part">Insights</span>
+        </h2>
         <p class="text">
           Discover expert tips, strategies, and stories to keep you ahead in the
           digital landscape.
         </p>
       </div>
-
-      <div class="grid-container">
-        <div class="card">
-          <h3 class="insight-card-title">
-            10 SEO Myths You <br />Need to Stop <br />Believing
-          </h3>
-          <p class="insight-card-description">
-            Think keyword stuffing and meta tags are the secret to ranking?
-            Discover the truth behind common SEO misconceptions and learn what
-            really drives results.
-          </p>
-          <a href="#" class="read-more">
-            <img src="./images/Icon.svg" alt="arrow" />
-            Read article
-          </a>
-        </div>
-        <div class="card">
-          <h3 class="insight-card-title">
-            Maximizing ROI with Social Media Advertising
-          </h3>
-          <p>
-            Social media ads are more than just boosted posts. Explore proven
-            strategies for crafting campaigns that engage audiences and deliver
-            measurable returns.
-          </p>
-          <a href="#" class="read-more">
-            <img src="./images/Icon.svg" alt="arrow" />
-            Read article
-          </a>
-        </div>
-        <div class="card">
-          <h3 class="insight-card-title">
-            How Content Marketing Fuels Long-Term Growth
-          </h3>
-          <p>
-            Content isn’t just king—it’s the foundation of sustainable business
-            growth. Find out how blogs, videos, and more can build trust and
-            drive conversions.
-          </p>
-          <a href="#" class="read-more">
-            <img src="./images/Icon.svg" alt="arrow" />
-            Read article
-          </a>
-        </div>
-        <div class="card">
-          <h3 class="insight-card-title">
-            The Art of A/B Testing: Perfecting Your Campaigns
-          </h3>
-          <p>
-            From headlines to call-to-actions, small tweaks can make a big
-            difference. Learn how to use A/B testing to refine your marketing
-            strategies.
-          </p>
-          <a href="#" class="read-more">
-            <img src="./images/Icon.svg" alt="arrow" />
-            Read article
-          </a>
-        </div>
-        <div class="card">
-          <h3 class="insight-card-title">
-            Understanding Google’s Latest Algorithm Update
-          </h3>
-          <p>
-            Search rankings change constantly—stay ahead by learning about the
-            latest Google update and its impact on your SEO strategy.
-          </p>
-          <a href="#" class="read-more">
-            <img src="./images/Icon.svg" alt="arrow" />
-            Read article
-          </a>
-        </div>
-        <div class="card">
-          <h3 class="insight-card-title">
-            5 Ways AI is Changing Digital Marketing
-          </h3>
-          <p>
-            Artificial intelligence is transforming the way we target, analyze,
-            and engage audiences. Discover how to leverage AI to stay
-            competitive.
-          </p>
-          <a href="#" class="read-more">
-            <img src="./images/Icon.svg" alt="arrow" />
-            Read article
-          </a>
+      <div class="container">
+        <div class="grid-container">
+          <div class="card">
+            <h3 class="insight-card-title">
+              10 SEO Myths You <br />Need to Stop <br />Believing
+            </h3>
+            <p class="insight-card-description">
+              Think keyword stuffing and meta tags are the secret to ranking?
+              Discover the truth behind common SEO misconceptions and learn what
+              really drives results.
+            </p>
+            <a href="#" class="read-more">
+              <img src="./images/Icon.svg" alt="arrow" />
+              Read article
+            </a>
+          </div>
+          <div class="card">
+            <h3 class="insight-card-title">
+              Maximizing ROI with Social Media Advertising
+            </h3>
+            <p>
+              Social media ads are more than just boosted posts. Explore proven
+              strategies for crafting campaigns that engage audiences and
+              deliver measurable returns.
+            </p>
+            <a href="#" class="read-more">
+              <img src="./images/Icon.svg" alt="arrow" />
+              Read article
+            </a>
+          </div>
+          <div class="card">
+            <h3 class="insight-card-title">
+              How Content Marketing Fuels Long-Term Growth
+            </h3>
+            <p>
+              Content isn’t just king—it’s the foundation of sustainable
+              business growth. Find out how blogs, videos, and more can build
+              trust and drive conversions.
+            </p>
+            <a href="#" class="read-more">
+              <img src="./images/Icon.svg" alt="arrow" />
+              Read article
+            </a>
+          </div>
+          <div class="card">
+            <h3 class="insight-card-title">
+              The Art of A/B Testing: Perfecting Your Campaigns
+            </h3>
+            <p>
+              From headlines to call-to-actions, small tweaks can make a big
+              difference. Learn how to use A/B testing to refine your marketing
+              strategies.
+            </p>
+            <a href="#" class="read-more">
+              <img src="./images/Icon.svg" alt="arrow" />
+              Read article
+            </a>
+          </div>
+          <div class="card">
+            <h3 class="insight-card-title">
+              Understanding Google’s Latest Algorithm Update
+            </h3>
+            <p>
+              Search rankings change constantly—stay ahead by learning about the
+              latest Google update and its impact on your SEO strategy.
+            </p>
+            <a href="#" class="read-more">
+              <img src="./images/Icon.svg" alt="arrow" />
+              Read article
+            </a>
+          </div>
+          <div class="card">
+            <h3 class="insight-card-title">
+              5 Ways AI is Changing Digital Marketing
+            </h3>
+            <p>
+              Artificial intelligence is transforming the way we target,
+              analyze, and engage audiences. Discover how to leverage AI to stay
+              competitive.
+            </p>
+            <a href="#" class="read-more">
+              <img src="./images/Icon.svg" alt="arrow" />
+              Read article
+            </a>
+          </div>
         </div>
       </div>
     </section>
-
     <footer class="footer container">
       <div class="footer-wrapper">
         <div class="footer-item">
-          <svg class="logo-icon footer-logo-icon">
-            <use href="./images/sprite.svg#logo"></use>
-          </svg>
+          <a href="./index.html">
+            <svg class="logo-icon footer-logo-icon">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
           <ul class="nav-list">
             <li><a class="nav-link" href="#">About us</a></li>
             <li><a class="nav-link" href="#">Services</a></li>
-            <li><a class="nav-link" href="#">Use Cases</a></li>
+            <li><a class="nav-link" href="./use-cases.html">Use Cases</a></li>
             <li><a class="nav-link" href="#">Pricing</a></li>
-            <li><a class="nav-link" href="#">Blog</a></li>
+            <li><a class="nav-link" href="./blog.html">Blog</a></li>
           </ul>
           <ul class="footer-list">
             <li>
@@ -382,7 +389,7 @@
         </div>
 
         <div class="footer-contact">
-          <div>
+          <div class="footer-info">
             <button class="contacts">Contact us:</button>
             <div class="contacts-info">
               <p>
@@ -412,6 +419,7 @@
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Email"
               class="input-wrapper"
             />

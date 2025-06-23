@@ -17,23 +17,47 @@
 }
 
 .card {
-  padding: 64px;
+  padding: 42px 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
+  width: 100%;
+  text-align: start;
 
-.card:nth-child(3),
-.card:nth-child(6) {
-  border-right: none;
-}
+  border-radius: 45px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 6px solid #000;
+  border-left: 1px solid #000;
 
-.card:nth-child(4),
-.card:nth-child(5),
-.card:nth-child(6) {
-  border-bottom: none;
+  @media (min-width: 1024px) {
+    width: auto;
+    border-radius: 0;
+    border-top: none;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  &:nth-child(3),
+  &:nth-child(6) {
+    @media (min-width: 1024px) {
+      border-right: none;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: 1024px) {
+      border-bottom: none;
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    @media (min-width: 1024px) {
+      border-bottom: none;
+    }
+  }
 }
 
 .insight-card-description {
