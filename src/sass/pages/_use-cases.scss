@@ -1,5 +1,11 @@
+@use "../components/home/hero";
+@use "../components/blog/insights";
+@use "../components/home/testimonials";
+@use "../components/home/cta";
+@use "../components/blog/facts";
+
 .story-card {
-  padding: 60px;
+  padding: 40px;
   background-color: #191a23;
   border-radius: 45px;
   border-top: 1px solid #191a23;
@@ -7,18 +13,31 @@
   border-bottom: 5px solid #191a23;
   border-left: 1px solid #191a23;
   margin-bottom: 140px;
-  
-  @media (min-width:768px) {
+
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-around;
-    
+    gap: 100px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 60px;
   }
 }
 
 .story-card-left {
   display: flex;
   flex-direction: column;
-  gap: 52px;
+  gap: 25px;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    gap: 35px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 52px;
+  }
 }
 
 .story-card-title {
@@ -75,8 +94,71 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 60px;
+  padding-right: 60px;
   width: 100%;
   gap: 100px;
   background-color: #b9ff66;
   border-radius: 45px;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.card-badge {
+  color: #b9ff66;
+  font-family: "Space Grotesk";
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.badge-mobile-hidden {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 25px;
+  background: #fff;
+  padding: 30px 28px;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    width: calc((100% - 25px) / 2);
+  }
+}
+
+.stat-description-title {
+  color: #000;
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.stat-description {
+  color: #000;
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-weight: 400;
 }

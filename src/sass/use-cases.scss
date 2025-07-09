@@ -1,7 +1,7 @@
-@import "./utils/variables";
-@import "./utils/reset";
-@import "./utils/globals";
-@import "./components/container";
-@import "./components/header";
-@import "./pages/use-cases";
-@import "./components/footer";
+@use "./utils/variables";
+@use "./utils/reset";
+@use "./utils/globals";
+@use "./components/container";
+@use "./components/header";
+@use "./pages/use-cases";
+@use "./components/footer";

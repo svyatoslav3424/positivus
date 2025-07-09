@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/use-cases.scss" />
   </head>
   <body>
@@ -29,14 +33,18 @@
         </ul>
         <a href="#form" class="quote-btn">Request a quote</a>
       </nav>
-      <svg class="header-menu">
+      <svg class="burger-menu">
         <use href="./images/sprite.svg#menu"></use>
+      </svg>
+
+      <svg class="burger-menu-close">
+        <use href="./images/sprite.svg#menu-close"></use>
       </svg>
     </header>
 
     <section class="hero">
       <div class="container">
-        <div class="marketing-card">
+        <div class="hero-top hero-background">
           <div class="hero-image">
             <img
               class="hero-image-illustration"
@@ -46,7 +54,7 @@
             />
           </div>
           <div class="hero-content">
-            <h1 class="hero-title">Proven Success Stories</h1>
+            <h1 class="hero-title no-mb">Proven Success Stories</h1>
             <p class="hero-text">
               See how our innovative digital marketing strategies have
               transformed businesses. Whether through SEO, PPC, social media, or
@@ -54,195 +62,142 @@
               work. Explore the successes and envision what we can achieve
               together.
             </p>
-            <a href="#form" class="hero-btn">Book a consultation</a>
           </div>
         </div>
-        <!-- <div class="swiper-1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/brand-1.webp" alt="amazon logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-2.webp" alt="dribble logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-3.webp" alt="hubspot logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-4.webp" alt="notion logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-5.webp" alt="netflix logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-6.webp" alt="zoom logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-1.webp" alt="amazon logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-2.webp" alt="dribble logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-3.webp" alt="hubspot logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-4.webp" alt="notion logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-5.webp" alt="netflix logo" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/brand-6.webp" alt="zoom logo" />
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
-
-    <div class="story-card">
-      <div class="story-card-left">
-        <h4 class="badge">Featured Success Story</h4>
-        <h2 class="story-card-title">
-          Scaling Success for a <br />Leading E-Commerce Brand
-        </h2>
-        <p class="story-card-description">
-          Through a comprehensive SEO and PPC strategy, we helped <br />this
-          e-commerce brand increase visibility, drive traffic, and <br />boost
-          sales.
+    <div class="container">
+      <div class="story-card">
+        <div class="story-card-left">
+          <span class="card-badge">Featured</span>
+          <h2 class="badge badge-mobile-hidden">Featured Success Story</h2>
+          <h3 class="story-card-title">
+            Scaling Success for a <br />Leading E-Commerce Brand
+          </h3>
+          <p class="story-card-description">
+            Through a comprehensive SEO and PPC strategy, we helped <br />this
+            e-commerce brand increase visibility, drive traffic, and <br />boost
+            sales.
+          </p>
+          <div class="story-card-link-wrapper">
+            <a href="" class="story-card-link">
+              <svg class="story-card-img">
+                <use
+                  x="10"
+                  y="10"
+                  href="./images/sprite.svg#learn-more-icon"
+                ></use>
+              </svg>
+              <span class="story-card-link-label">Read</span></a
+            >
+          </div>
+        </div>
+        <ul class="card-right">
+          <li class="stat">
+            <h3 class="stat-description-title">200%</h3>
+            <span class="stat-description"
+              >increase in <br />organic traffic</span
+            >
+          </li>
+          <li class="stat">
+            <h3 class="stat-description-title">150%</h3>
+            <span class="stat-description">rise in online <br />sales</span>
+          </li>
+          <li class="stat">
+            <h3 class="stat-description-title">75%</h3>
+            <span class="stat-description"
+              >reduction in <br />cost-per-click (CPC)</span
+            >
+          </li>
+          <li class="stat">
+            <h3 class="stat-description-title">300%</h3>
+            <span class="stat-description"
+              >improvement in <br />conversion rate</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2 class="badge">All Success Stories</h2>
+        <p class="badge-label">
+          Explore Real-Life Examples of Our Proven Digital Marketing Success
+          through Our Case Studies
         </p>
-        <div class="story-card-link-wrapper">
-          <a href="" class="story-card-link">
-            <svg class="story-card-img">
-              <use
-                x="10"
-                y="10"
-                href="./images/sprite.svg#learn-more-icon"
-              ></use>
-            </svg>
-            <span class="story-card-link-label">Read</span></a
-          >
+      </div>
+      <div class="grid-container">
+        <div class="card">
+          <h3 class="insight-card-title">E-commerce Fashion Brand</h3>
+          <p>
+            Think keyword stuffing and meta tags are the secret to ranking?
+            Discover the truth behind common SEO misconceptions and learn what
+            really drives results.
+          </p>
+          <a href="#" class="read-more">
+            <img src="./images/Icon.svg" alt="arrow" />
+            Learn more
+          </a>
+        </div>
+        <div class="card">
+          <h3 class="insight-card-title">Local Restaurant Chain</h3>
+          <p>
+            Social media ads are more than just boosted posts. Explore proven
+            strategies for crafting campaigns that engage audiences and deliver
+            measurable returns.
+          </p>
+          <a href="#" class="read-more">
+            <img src="./images/Icon.svg" alt="arrow" />
+            Learn more
+          </a>
+        </div>
+        <div class="card">
+          <h3 class="insight-card-title">Healthcare Provider</h3>
+          <p>
+            Content isn’t just king—it’s the foundation of sustainable business
+            growth. Find out how blogs, videos, and more can build trust and
+            drive conversions.
+          </p>
+          <a href="#" class="read-more">
+            <img src="./images/Icon.svg" alt="arrow" />
+            Learn more
+          </a>
+        </div>
+        <div class="card">
+          <h3 class="insight-card-title">E-commerce Fashion Brand</h3>
+          <p>
+            From headlines to call-to-actions, small tweaks can make a big
+            difference. Learn how to use A/B testing to refine your marketing
+            strategies.
+          </p>
+          <a href="#" class="read-more">
+            <img src="./images/Icon.svg" alt="arrow" />
+            Learn more
+          </a>
+        </div>
+        <div class="card">
+          <h3 class="insight-card-title">Local Restaurant Chain</h3>
+          <p>
+            Search rankings change constantly—stay ahead by learning about the
+            latest Google update and its impact on your SEO strategy.
+          </p>
+          <a href="#" class="read-more">
+            <img src="./images/Icon.svg" alt="arrow" />
+            Learn more
+          </a>
+        </div>
+        <div class="card">
+          <h3 class="insight-card-title">Healthcare Provider</h3>
+          <p>
+            Artificial intelligence is transforming the way we target, analyze,
+            and engage audiences. Discover how to leverage AI to stay
+            competitive.
+          </p>
+          <a href="#" class="read-more">
+            <img src="./images/Icon.svg" alt="arrow" />
+            Learn more
+          </a>
         </div>
       </div>
-      <ul class="card-right">
-        <li class="stat">
-          <h3>200%</h3>
-          <span class="stat-description"
-            >increase in <br />organic traffic</span
-          >
-        </li>
-        <li class="stat">
-          <h3>150%</h3>
-          <span class="stat-description">rise in online <br />sales</span>
-        </li>
-        <li class="stat">
-          <h3>75%</h3>
-          <span class="stat-description"
-            >reduction in <br />cost-per-click (CPC)</span
-          >
-        </li>
-        <li class="stat">
-          <h3>300%</h3>
-          <span class="stat-description"
-            >improvement in <br />conversion rate</span
-          >
-        </li>
-      </ul>
     </div>
-
-    <div class="box">
-      <h2 class="badge">All Success Stories</h2>
-      <p class="badge-label">
-        Explore Real-Life Examples of Our Proven Digital Marketing Success
-        through Our Case Studies
-      </p>
-    </div>
-
-    <div class="grid-container">
-      <div class="card">
-        <h3 class="insight-card-title">
-          10 SEO Myths You <br />Need to Stop <br />Believing
-        </h3>
-        <p>
-          Think keyword stuffing and meta tags are the secret to ranking?
-          Discover the truth behind common SEO misconceptions and learn what
-          really drives results.
-        </p>
-        <a href="#" class="read-more">
-          <img src="./images/Icon.svg" alt="arrow" />
-          Read article
-        </a>
-      </div>
-      <div class="card">
-        <h3 class="insight-card-title">
-          Maximizing ROI with Social Media Advertising
-        </h3>
-        <p>
-          Social media ads are more than just boosted posts. Explore proven
-          strategies for crafting campaigns that engage audiences and deliver
-          measurable returns.
-        </p>
-        <a href="#" class="read-more">
-          <img src="./images/Icon.svg" alt="arrow" />
-          Read article
-        </a>
-      </div>
-      <div class="card">
-        <h3 class="insight-card-title">
-          How Content Marketing Fuels Long-Term Growth
-        </h3>
-        <p>
-          Content isn’t just king—it’s the foundation of sustainable business
-          growth. Find out how blogs, videos, and more can build trust and drive
-          conversions.
-        </p>
-        <a href="#" class="read-more">
-          <img src="./images/Icon.svg" alt="arrow" />
-          Read article
-        </a>
-      </div>
-      <div class="card">
-        <h3 class="insight-card-title">
-          The Art of A/B Testing: Perfecting Your Campaigns
-        </h3>
-        <p>
-          From headlines to call-to-actions, small tweaks can make a big
-          difference. Learn how to use A/B testing to refine your marketing
-          strategies.
-        </p>
-        <a href="#" class="read-more">
-          <img src="./images/Icon.svg" alt="arrow" />
-          Read article
-        </a>
-      </div>
-      <div class="card">
-        <h3 class="insight-card-title">
-          Understanding Google’s Latest Algorithm Update
-        </h3>
-        <p>
-          Search rankings change constantly—stay ahead by learning about the
-          latest Google update and its impact on your SEO strategy.
-        </p>
-        <a href="#" class="read-more">
-          <img src="./images/Icon.svg" alt="arrow" />
-          Read article
-        </a>
-      </div>
-      <div class="card">
-        <h3 class="insight-card-title">
-          5 Ways AI is Changing Digital Marketing
-        </h3>
-        <p>
-          Artificial intelligence is transforming the way we target, analyze,
-          and engage audiences. Discover how to leverage AI to stay competitive.
-        </p>
-        <a href="#" class="read-more">
-          <img src="./images/Icon.svg" alt="arrow" />
-          Read article
-        </a>
-      </div>
-    </div>
-
     <section class="testimonials">
       <div class="container">
         <div class="box">
@@ -338,19 +293,20 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
     <section class="cta-text">
       <div class="container">
-        <div class="cta-content-2">
+        <div class="cta-content cta-background">
           <div class="cta-title">
-            <h2 class="cta-item">Let’s make things happen</h2>
+            <h2 class="cta-item">Let’s Create Your Next Success Story</h2>
             <p>
               Contact us today to learn more about how our digital marketing
               services can help your business grow and succeed online.
             </p>
             <a href="#form" class="cta-button">Get your free proposal</a>
           </div>
-          <img class="cta-logo" src="./images/stars-and-romb.svg" alt="stars" />
+          <svg class="cta-icon">
+            <use href="./images/sprite.svg#stars-and-romb-gray"></use>
+          </svg>
         </div>
       </div>
     </section>
@@ -442,5 +398,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./use-cases.js" type="module"></script>
+    <script src="./swiper.js"></script>
   </body>
 </html>

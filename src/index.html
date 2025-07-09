@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="header container">
-      <a href="./index.html">
+      <a class="logo" href="./index.html">
         <svg class="logo-icon">
           <use href="./images/sprite.svg#logo"></use>
         </svg>
@@ -40,8 +40,12 @@
         </ul>
         <a href="#form" class="quote-btn">Request a quote</a>
       </nav>
-      <svg class="header-menu">
+      <svg class="burger-menu">
         <use href="./images/sprite.svg#menu"></use>
+      </svg>
+
+      <svg class="burger-menu-close">
+        <use href="./images/sprite.svg#menu-close" />
       </svg>
     </header>
 
@@ -122,7 +126,7 @@
         </div>
 
         <ul class="box-list">
-          <li class="service-card">
+          <li class="service-card framer-right">
             <a class="card-link" href="">
               <h3 class="card-title">
                 <span class="accent green">Search engine</span>
@@ -140,7 +144,7 @@
             </a>
           </li>
 
-          <li class="service-card green">
+          <li class="service-card framer-left green">
             <a class="card-link" href="">
               <h3 class="card-title">
                 <span class="accent white">Pay-per-click</span>
@@ -158,7 +162,7 @@
             </a>
           </li>
 
-          <li class="service-card dark">
+          <li class="service-card framer-right dark">
             <a class="card-link" href="">
               <h3 class="card-title">
                 <span class="accent accent white">Social Media</span>
@@ -181,7 +185,7 @@
             </a>
           </li>
 
-          <li class="service-card">
+          <li class="service-card framer-left">
             <a class="card-link" href="">
               <h3 class="card-title">
                 <span class="accent green">Email</span>
@@ -198,7 +202,7 @@
               <img class="card-image" src="./images/logo4.png" alt="SEO" />
             </a>
           </li>
-          <li class="service-card green">
+          <li class="service-card framer-right green">
             <a class="card-link" href="">
               <h3 class="card-title">
                 <span class="accent white">Content</span>
@@ -215,7 +219,7 @@
               <img class="card-image" src="./images/logo5.png" alt="SEO" />
             </a>
           </li>
-          <li class="service-card dark">
+          <li class="service-card framer-left dark">
             <a class="card-link" href="">
               <h3 class="card-title">
                 <span class="accent green">Analytics and</span>
@@ -252,7 +256,9 @@
             </p>
             <a href="#form" class="cta-button">Get your free proposal</a>
           </div>
-          <img class="cta-logo" src="./images/stars-and-romb.svg" alt="stars" />
+          <svg class="cta-icon">
+            <use href="./images/sprite.svg#stars-and-romb-green"></use>
+          </svg>
         </div>
       </div>
     </section>
@@ -281,7 +287,7 @@
             </button>
           </div>
           <div class="divider"></div>
-          <div class="case-study">
+          <div class="case-study framer-left">
             <p class="case-text">
               For a B2B software company, we developed an SEO strategy that
               resulted in a first-page ranking for key keywords and a 200%
@@ -311,7 +317,6 @@
         </div>
       </div>
     </section>
-
     <section class="working-process">
       <div class="container">
         <div class="box">
@@ -321,7 +326,7 @@
           </p>
         </div>
         <ul class="accordion-list">
-          <li class="accordion-item">
+          <li class="accordion-item framer-left">
             <div class="accordion-header">
               <h3 class="accordion-title">
                 <span class="accordion-number">01</span> Consultation
@@ -339,7 +344,7 @@
               </p>
             </div>
           </li>
-          <li class="accordion-item">
+          <li class="accordion-item framer-right">
             <div class="accordion-header">
               <h3 class="accordion-title">
                 <span class="accordion-number">02</span> Research and Strategy
@@ -358,7 +363,7 @@
               </p>
             </div>
           </li>
-          <li class="accordion-item">
+          <li class="accordion-item framer-left">
             <div class="accordion-header">
               <h3 class="accordion-title">
                 <span class="accordion-number">03</span> Implementation
@@ -376,7 +381,7 @@
               </p>
             </div>
           </li>
-          <li class="accordion-item">
+          <li class="accordion-item ">
             <div class="accordion-header">
               <h3 class="accordion-title">
                 <span class="accordion-number">04</span> Monitoring and
@@ -395,7 +400,7 @@
               </p>
             </div>
           </li>
-          <li class="accordion-item">
+          <li class="accordion-item framer-left">
             <div class="accordion-header">
               <h3 class="accordion-title">
                 <span class="accordion-number">05</span> Reporting and
@@ -710,7 +715,7 @@
 
         <div class="form-wrapper" id="form">
           <form class="form">
-            <div class="form-content">
+            <div class="form-content framer-left">
               <div class="radio-group">
                 <div class="radio-item">
                   <div class="custom-radio-btn">
@@ -883,5 +888,6 @@
     <script src="./script.js" type="module"></script>
     <script src="./swiper.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./animation.js" type="module"></script>
   </body>
 </html>
