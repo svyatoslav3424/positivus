@@ -201,3 +201,8 @@ gsap.fromTo(".footer-wrapper", POSITION.FROM.BOTTOM, {
   ...initScrollTrigger(".footer-wrapper"),
   ...POSITION.TO.MIDDLE,
 });
+
+gsap.fromTo(".hero-image-illustration", POSITION.FROM.BOTTOM, {
+  ...initScrollTrigger(".hero-image-illustration"),
+  ...POSITION.TO.MIDDLE,
+});

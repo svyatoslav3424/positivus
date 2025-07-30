@@ -33,9 +33,11 @@ gsap.fromTo(".quote-btn", POSITION.FROM.RIGHT, {
   ...POSITION.TO.MIDDLE,
 });
 
-gsap.fromTo(".nav-list", POSITION.FROM.TOP, {
-  ...initScrollTrigger(".nav-list"),
-  ...POSITION.TO.MIDDLE,
+gsap.utils.toArray(".footer-nav-item").forEach((item) => {
+  gsap.fromTo(item, POSITION.FROM.TOP, {
+    ...initScrollTrigger(item),
+    ...POSITION.TO.MIDDLE,
+  });
 });
 
 gsap.fromTo(
@@ -126,7 +128,7 @@ gsap.fromTo(".grid-container", POSITION.FROM.HIDDEN, {
 
 gsap.utils.toArray(".card").forEach((item, index) => {
   gsap.fromTo(item, POSITION.FROM.LEFT, {
-    ...initScrollTrigger(".card"),
+    ...initScrollTrigger(item),
     ...POSITION.TO.MIDDLE,
     delay: 0.2 + index * 0.2,
   });
