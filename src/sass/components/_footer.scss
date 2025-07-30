@@ -1,6 +1,6 @@
 .footer {
   padding: 0;
-
+  overflow: hidden;
   @media (min-width: 768px) {
     padding: 0 15px;
   }
@@ -153,6 +153,7 @@
   @media (min-width: 1024px) {
     padding: 58px 40px;
     gap: 20px;
+    max-width: 600px;
   }
 }
 

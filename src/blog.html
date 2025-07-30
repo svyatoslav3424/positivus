@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="header container">
-      <a href="./index.html">
+      <a class="logo" href="./index.html">
         <svg class="logo-icon">
           <use href="./images/sprite.svg#logo"></use>
         </svg>
@@ -22,9 +22,9 @@
       <nav class="navigation">
         <ul class="nav-list">
           <li><a class="nav-link" href="./about.html">About us</a></li>
-          <li><a class="nav-link" href="./services.htnl">Services</a></li>
+          <!-- <li><a class="nav-link" href="">Services</a></li> -->
           <li><a class="nav-link" href="./use-cases.html">Use Cases</a></li>
-          <li><a class="nav-link" href="./pricing.html">Pricing</a></li>
+          <!-- <li><a class="nav-link" href="">Pricing</a></li> -->
           <li><a class="nav-link" href="./blog.html">Blog</a></li>
         </ul>
         <a href="#form" class="quote-btn">Request a quote</a>
@@ -127,14 +127,14 @@
               <h2 class="fact-title fact-title-margin">
                 Striking the Right Balance
               </h2>
-              <blockquote>
+              <blockquote class="quote-text">
                 <p>
                   “PPC and organic marketing aren’t rivals—they’re teammates.
                   The best strategies combine both to create a holistic approach
                   to growth,” says a digital marketing expert.
                 </p>
               </blockquote>
-              <div class="quote-text">
+              <div class="text-wrapper">
                 <p>
                   For instance, a business might use PPC to generate quick
                   traffic for a new product launch while building long-term
@@ -437,5 +437,8 @@
         </div>
       </div>
     </footer>
+    <script src="./animations/blog.js" type="module"></script>
+    <script src="./animations/home.js" type="module"></script>
+    <script src="./header.js" type="module"></script>
   </body>
 </html>
