@@ -14,9 +14,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        useCases: resolve(__dirname, "use-cases.html"),
-        blog: resolve(__dirname, "blog.html"),
+        main: resolve(__dirname, "src/index.html"),
+        useCases: resolve(__dirname, "src/use-cases.html"),
+        blog: resolve(__dirname, "src/blog.html"),
       },
     },
     outDir: resolve(__dirname, "dist"),
