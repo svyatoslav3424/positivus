@@ -12,6 +12,13 @@ export default defineConfig({
   root: "src",
   envDir: "../",
   build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        useCases: resolve(__dirname, "use-cases.html"),
+        blog: resolve(__dirname, "blog.html"),
+      },
+    },
     outDir: resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
